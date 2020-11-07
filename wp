@@ -1,5 +1,10 @@
 #!/bin/zsh
 
+function backend() {
+    echo ${wal --backend}
+}
+
+
 function set_wallpaper() {
     clear
     local file="${1?}"
@@ -9,4 +14,10 @@ function set_wallpaper() {
     wal -i /usr/share/backgrounds/$file.jpg --backend $backend --saturate $saturation -p $file
 }
 
-set_wallpaper $1 $2 $3
+if [ ${1?} = "be" ]
+then
+    backend
+else
+    set_wallpaper $1 $2 $3
+fi
+
