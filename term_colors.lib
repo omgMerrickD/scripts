@@ -1,0 +1,45 @@
+# term_colors.lib
+#
+# basic library to more easily access terminal colors in my shell scripts
+
+
+RESET='\u001b[0m'
+
+# foreground
+FGRED='\u001b[31m'
+FGGREEN='\u001b[32m'
+FGYELLOW='\u001b[33m'
+FGBLUE='\u001b[34m'
+FGMAGENTA='\u001b[35m'
+FGCYAN='\u001b[36m'
+FGWHITE='\u001b[37m'
+FGBLACK='\u001b[30m'
+
+# bright foreground 
+FGBWHITE='\u001b[37;1m'
+FGBCYAN='\u001b[36;1m'
+FGBMAGENTA='\u001b[35;1m'
+FGBBLUE='\u001b[34;1m'
+FGBYELLOW='\u001b[33;1m'
+FGBGREEN='\u001b[32;1m'
+FGBRED='\u001b[31;1m'
+FGBBLACK='\u001b[30;1m'
+
+# background
+BGRED='\u001b[41m'
+BGGREEN='\u001b[42m'
+BGYELLOW='\u001b[43m'
+BGBLUE='\u001b[44m'
+BGMAGENTA='\u001b[45m'
+BGCYAN='\u001b[46m'
+BGWHITE='\u001b[47m'
+
+# bright background
+BGBBLACK='\u001b[40;1m'
+BGBRED='\u001b[41;1m'
+BGBGREEN='\u001b[42;1m'
+BGBYELLOW='\u001b[43;1m'
+BGBBLUE='\u001b[44;1m'
+BGBMAGENTA='\u001b[45;1m'
+BGBCYAN='\u001b[46;1m'
+BGBWHITE='\u001b[47;1m'
