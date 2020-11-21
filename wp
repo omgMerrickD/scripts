@@ -1,1 +1,23 @@
-/usr/local/bin/wp
+#!/bin/zsh
+
+function backend() {
+    echo ${wal --backend}
+}
+
+
+function set_wallpaper() {
+    clear
+    local file="${1?}"
+    local backend="${2:-wal}"
+    local saturation="${3:-1.0}"
+    echo "Exec: wal -i /usr/share/backgrounds/$file.jpg --backend $backend --saturate $saturate -p $file"
+    wal -i /usr/share/backgrounds/$file.jpg --backend $backend --saturate $saturation -p $file
+}
+
+if [ ${1?} = "be" ]
+then
+    backend
+else
+    set_wallpaper $1 $2 $3
+fi
+
