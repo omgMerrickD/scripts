@@ -1,4 +1,15 @@
 #!/bin/zsh
+#
+# Basic wrapper for wal/pywal to set the wallpaper and choose a backend
+# Usage: wp FILENAME BACKEND SATURATION
+# Available backends:
+#   colorz
+#   colorthief
+#   schemer2
+#   wal
+#   haishoku
+#
+# TODO: Error handling
 
 function backend() {
     echo ${wal --backend}
